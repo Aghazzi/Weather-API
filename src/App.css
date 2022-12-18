@@ -1,25 +1,88 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+body {
+   margin: 0;
+   padding: 0;
 }
 
-.app__header,
-.app__main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+::-webkit-input-placeholder {
+   color: white;
+   opacity: 0.8;
+   font-family: "Raleway";
+}
+
+.app {
+   height: 100vh;
+   width: 100vw;
+   transition: background-color 1s ease-in;
+   background-color:#9ccef4;
+}
+
+.app_header, .app_main {
+   font-family: "Raleway";
+}
+
+.app_header {
+   padding: 20px;
+   background-color: #6c94c9;
+}
+
+.app_main {
+   padding-top: 60px;
+}
+
+.input_search {
+  font-family: "Raleway";
+   border: 0px solid #cccccc; 
+   border-radius: 4px 0 0 4px;
+   box-sizing: border-box;
+   font-size: 16px; background-color: transparent;
+   outline: 0;
+   color: white;
+   padding: 15px;
+   padding-left: 0px;
+   opacity: 0.8;
+}
+
+.search_button {
+   background-color: #5879c7;
+   border: none;
+   color: #2c3975;
+   padding: 15px 32px;
+   font-size: 16px;
+   margin-left: 100px;
+   font-family: "Raleway";
+}
+
+  .image {
+    width: 15%;
+    margin-left: 38%;
+    text-align: center;
+    color: white;
+  }
+
+.temperature, .pressure {
+   color: #2c3975;
+   padding-top: 10px;
+   justify-content: space-around;
+   width: 300px;
+   margin-left: -30px;
+  }
+
+.allday {
+   display: flex;
+   text-align: center;
+   color:#2c3975 ;
+   justify-content: space-around;
+   width: 75%;
+   margin-left: 10%;
+   margin-top: 80px;
+}
+
+.allday div {
+   margin: 20px;
+   width: 70px;
 }
 
 /*  Search bar */
 
 /* Current weather */
 
-div {
-  border: 5px solid red;
-}
