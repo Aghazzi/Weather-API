@@ -35,13 +35,11 @@ html {
     font-family: "Raleway";
     border: 0px solid #cccccc;
     border-radius: 4px 0 0 4px;
-    box-sizing: border-box;
     font-size: 16px;
     background-color: transparent;
     outline: 0;
     color: white;
-    padding: 15px;
-    padding-left: 0px;
+    margin-bottom: 10px;
     opacity: 0.8;
 }
 
@@ -49,9 +47,8 @@ html {
     background-color: #5879c7;
     border: none;
     color: #2c3975;
-    padding: 15px 32px;
+    padding: 15px 40px;
     font-size: 16px;
-    margin-left: 100px;
     font-family: "Raleway";
 }
 
@@ -89,16 +86,25 @@ html {
         flex-wrap: wrap;
     }
 
-    .search_button {
-        margin: 0;
-    }
-
-    .app_header {
+    form {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 }
+
+@media screen and (max-width:500px){
+    allday {
+        flex-wrap: wrap;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+
 /*  Search bar */
 
 /* Current weather */

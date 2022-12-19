@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Search from "./components/Search";
 import MainWeather from "./components/MainWeather";
-import storm from "../src/img/weather-icons/mostlycloudy.svg";
+// import storm from "../src/img/weather-icons/mostlycloudy.svg";
 import AllWeather from "./components/AllWeather.js";
-import clear from "../src/img/weather-icons/clear.svg";
+// import clear from "../src/img/weather-icons/clear.svg";
 import "./App.css";
 
 class App extends Component {
