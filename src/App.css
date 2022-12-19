@@ -93,8 +93,13 @@ html {
 }
 
 @media screen and (max-width:500px){
-    allday {
-        flex-wrap: wrap;
+    .allday {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .allday div {
+        flex-direction: row;
     }
 
     form {
