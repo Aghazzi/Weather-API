@@ -1,6 +1,5 @@
 import React from "react";
-import storm from "../img/weather-icons/mostlycloudy.svg";
-import clear from "../img/weather-icons/clear.svg";
+import storm from "../img/weather-icons/mostlycloudy.svg"
 import "./Search.css";
 class MainWeather extends React.Component {
     state = {
@@ -16,7 +15,7 @@ class MainWeather extends React.Component {
                 width="250"
                 height="250"
             />
-            <h2>overcast clouds</h2>
+            <h2>{this.props.Weather}</h2>
             <h2 className="temperature">
                 Temperature
                 <span
@@ -26,7 +25,7 @@ class MainWeather extends React.Component {
                     }}
                 >
                     {" "}
-                    10&#176; to 11&#8451;
+                    {this.props.Min}&#176; to {this.props.Max}&#8451;
                 </span>
             </h2>
             <p className="pressure">
@@ -38,7 +37,7 @@ class MainWeather extends React.Component {
                 >
                     Humidity{" "}
                 </span>{" "}
-                78%{" "}
+                {this.props.humidity}{" "}
                 <span
                     style={{
                         fontWeight: "bold",
@@ -48,7 +47,7 @@ class MainWeather extends React.Component {
                 >
                     Pressure{" "}
                 </span>{" "}
-                1008.48
+                {this.props.pressure}
             </p>
         </section>
         );
