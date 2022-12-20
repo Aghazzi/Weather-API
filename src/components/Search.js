@@ -11,12 +11,12 @@ class Search extends React.Component {
         return (
             <header className="app_header">
                 <form>
-                <input
-                    type="text"
-                    placeholder="Type in a city name"
-                    className="input_search"
-                ></input>
-                <button className="search_button">FIND WEATHER</button>
+                    <input
+                        type="text"
+                        placeholder="Type in a city name"
+                        className="input_search"
+                    ></input>
+                    <button className="search_button">FIND WEATHER</button>
                 </form>
             </header>
         );

@@ -1,6 +1,14 @@
+/* eslint-disable default-case */
 import React from "react";
-import storm from "../img/weather-icons/mostlycloudy.svg";
 import clear from "../img/weather-icons/clear.svg";
+import cloudy from "../img/weather-icons/cloudy.svg";
+import drizzle from "../img/weather-icons/drizzle.svg";
+import fog from "../img/weather-icons/fog.svg";
+import partlycloudy from "../img/weather-icons/partlycloudy.svg";
+import rain from "../img/weather-icons/rain.svg";
+import snow from "../img/weather-icons/snow.svg";
+import storm from "../img/weather-icons/storm.svg";
+import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
 import "./Search.css";
 class AllWeather extends React.Component {
     state = {
@@ -8,79 +16,31 @@ class AllWeather extends React.Component {
     };
 
     render() {
+        const imageSrc = (image) => {
+            if (image === "clouds") return cloudy;
+            else if (image === "clear") return clear;
+            else if (image === "mostlycloudy") return mostlycloudy;
+            else if (image === "partlycloudy") return partlycloudy;
+            else if (image === "snow") return snow;
+            else if (image === "storm") return storm;
+            else if (image === "rain") return rain;
+            else if (image === "fog") return fog;
+            else if (image === "drizzle") return drizzle;
+        };
         return (
-            <section className="allday">
-                        <div>
-                            <p>03:00</p>
-                            <img
-                                src={storm}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>8&#8451;</p>
-                        </div>
-                        <div>
-                            <p>06:00</p>
-                            <img
-                                src={storm}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>9&#8451;</p>
-                        </div>
-                        <div>
-                            <p>09:00</p>
-                            <img
-                                src={clear}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>14&#8451;</p>
-                        </div>
-                        <div>
-                            <p>12:00</p>
-                            <img
-                                src={clear}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>17&#8451;</p>
-                        </div>
-                        <div>
-                            <p>15:00</p>
-                            <img
-                                src={clear}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>18&#8451;</p>
-                        </div>
-                        <div>
-                            <p>18:00</p>
-                            <img
-                                src={clear}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>16&#8451;</p>
-                        </div>
-                        <div>
-                            <p>21:00</p>
-                            <img
-                                src={storm}
-                                alt="first"
-                                height="100px"
-                                width="100px"
-                            />
-                            <p>13&#8451;</p>
-                        </div>
-                    </section>
+            <div>
+                <p>{this.props.time}</p>
+                <img
+                    src={imageSrc(this.props.img)}
+                    alt={this.props.img}
+                    height="100px"
+                    width="100px"
+                />
+                <p>
+                    {this.props.temp}
+                    &#8451;
+                </p>
+            </div>
         );
     }
 }
