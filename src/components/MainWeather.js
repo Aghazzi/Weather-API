@@ -46,11 +46,11 @@ class MainWeather extends React.Component {
                     >
                         {" "}
                         {(
-                            this.props.Data.list[4].main.temp_min - 273.15
+                            this.props.Data.main.temp_min
                         ).toFixed()}
                         &#176; to{" "}
                         {(
-                            this.props.Data.list[4].main.temp_max - 273.15
+                            this.props.Data.main.temp_max
                         ).toFixed()}
                         &#8451;
                     </span>
@@ -64,7 +64,7 @@ class MainWeather extends React.Component {
                     >
                         Humidity{" "}
                     </span>{" "}
-                    {this.props.Data.list[4].main.humidity}%{" "}
+                    {this.props.Data.main.humidity}%{" "}
                     <span
                         style={{
                             fontWeight: "bold",
@@ -74,7 +74,7 @@ class MainWeather extends React.Component {
                     >
                         Pressure{" "}
                     </span>{" "}
-                    {this.props.Data.list[4].main.pressure}
+                    {this.props.Data.main.pressure}
                 </p>
             </section>
         );
