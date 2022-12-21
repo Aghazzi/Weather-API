@@ -14,10 +14,17 @@ class Search extends React.Component {
                     <input
                         type="text"
                         placeholder="Type in a city name"
-                        onChange={e => this.setState({input: e.target.value})}
+                        onChange={(e) =>
+                            this.setState({ input: e.target.value })
+                        }
                         className="input_search"
                     ></input>
-                    <button onClick={e => this.props.event(e,this.state.input)} className="search_button">FIND WEATHER</button>
+                    <button
+                        onClick={(e) => this.props.event(e, this.state.input)}
+                        className="search_button"
+                    >
+                        FIND WEATHER
+                    </button>
                 </form>
             </header>
         );

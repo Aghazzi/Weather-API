@@ -1,0 +1,1 @@
+## API LINK: `http://api.openweathermap.org/data/2.5/forecast?q=${n}&cnt=8&units=metric&appid=e6ae59da57e3433390c99c6ca26571eb`

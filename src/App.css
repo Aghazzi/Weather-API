@@ -29,6 +29,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    color: #08208b;
 }
 
 .input_search {
@@ -101,14 +102,18 @@ html {
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
     .allday {
         align-items: center;
         flex-direction: column;
     }
 
     .allday div {
+        display: flex;
+        align-items: center;
         flex-direction: row;
+        border-bottom: 2px solid #37478b;
+        padding-bottom: 50px;
     }
 
     form {
@@ -117,7 +122,6 @@ html {
         align-items: center;
     }
 }
-    
 
 /*  Search bar */
 

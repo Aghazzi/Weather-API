@@ -45,13 +45,8 @@ class MainWeather extends React.Component {
                         }}
                     >
                         {" "}
-                        {(
-                            this.props.Data.main.temp_min
-                        ).toFixed()}
-                        &#176; to{" "}
-                        {(
-                            this.props.Data.main.temp_max
-                        ).toFixed()}
+                        {this.props.Data.main.temp_min.toFixed()}
+                        &#176; to {this.props.Data.main.temp_max.toFixed()}
                         &#8451;
                     </span>
                 </h2>
