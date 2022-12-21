@@ -35,7 +35,7 @@ class MainWeather extends React.Component {
                     width="250"
                     height="250"
                 />
-                <h2>overcast clouds</h2>
+                <h2>{this.props.Data.weather[0].description}</h2>
                 <h2 className="temperature">
                     Temperature
                     <span
